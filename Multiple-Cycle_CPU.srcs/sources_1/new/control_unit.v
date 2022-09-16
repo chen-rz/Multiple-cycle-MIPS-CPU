@@ -69,9 +69,6 @@ module control_unit (
 
     always @(*) begin
 
-        if (~reset_n)
-            state <= if_state;
-
         // Write-enables: all 0
         pc_wena = 1'b0;
         ir_wena = 1'b0;
@@ -239,7 +236,10 @@ module control_unit (
 
     always @(posedge clk) begin
 
-        state <= next_state;
+        if (~reset_n)
+            state <= if_state;
+        else
+            state <= next_state;
         
     end
 

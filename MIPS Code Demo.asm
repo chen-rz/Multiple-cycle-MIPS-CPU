@@ -56,7 +56,7 @@
 #
 #$s6: for test of other instructions
 ########################################################################################
-initialization:	ori $sp, $zero, 0xFFFFFFFC	#ori $sp, $zero, 0xFFFC	
+initialization:	ori $sp, $zero, 0xFFFFFFFC	#ori $sp, $zero, 0x3FC	
 	ori $s1, $zero, 0x4	
 	srl $s2, $s1, 0x1	
 	and $s3, $s1, $s2	

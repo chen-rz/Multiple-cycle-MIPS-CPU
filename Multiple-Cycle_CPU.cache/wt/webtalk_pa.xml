@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Sep 15 18:37:01 2022">
+<application name="pa" timeStamp="Fri Sep 16 10:19:34 2022">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="15f31dbfa7f34cc0b2f1e9b01252f2ba" type="ProjectID"/>
-<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+<property name="ProjectID" value="105803e97f514c4f80eecc7cbdf70e55" type="ProjectID"/>
+<property name="ProjectIteration" value="5" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,20 +17,70 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="2" type="JavaHandler"/>
+<property name="CloseProject" value="3" type="JavaHandler"/>
+<property name="FileExit" value="1" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="6" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="5" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="1" type="JavaHandler"/>
+<property name="RefreshDevice" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="3" type="JavaHandler"/>
+<property name="RunSynthesis" value="3" type="JavaHandler"/>
+<property name="ShowView" value="3" type="JavaHandler"/>
+<property name="SimulationRun" value="6" type="JavaHandler"/>
+<property name="ToggleAutoFitSelection" value="4" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProgramandDebug" value="1" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="4" type="JavaHandler"/>
+<property name="ZoomOut" value="4" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
-<property name="BaseDialog_OK" value="1" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="2" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="21" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="2" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="1" type="GuiHandlerData"/>
 <property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_PROJECT" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiHandlerData"/>
-<property name="SyntheticaStateMonitor_CANCEL" value="1" type="GuiHandlerData"/>
+<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="6" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="4" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="33" type="GuiHandlerData"/>
+<property name="MainMenuMgr_CHECKPOINT" value="7" type="GuiHandlerData"/>
+<property name="MainMenuMgr_EXPORT" value="4" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="8" type="GuiHandlerData"/>
+<property name="MainMenuMgr_IP" value="7" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="4" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TEXT_EDITOR" value="6" type="GuiHandlerData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="1" type="GuiHandlerData"/>
+<property name="MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED" value="2" type="GuiHandlerData"/>
+<property name="MsgView_WARNING_MESSAGES" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_CONNECT_TARGET" value="2" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_FIT_SELECTION" value="4" type="GuiHandlerData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="3" type="GuiHandlerData"/>
+<property name="PACommandNames_EXIT" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_RUN_BITGEN" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="6" type="GuiHandlerData"/>
+<property name="PACommandNames_ZOOM_OUT" value="4" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="1" type="GuiHandlerData"/>
+<property name="PAViews_DEVICE" value="5" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="3" type="GuiHandlerData"/>
+<property name="ProgramDebugTab_OPEN_TARGET" value="3" type="GuiHandlerData"/>
+<property name="ProgramDebugTab_PROGRAM_DEVICE" value="6" type="GuiHandlerData"/>
+<property name="ProgramDebugTab_REFRESH_DEVICE" value="1" type="GuiHandlerData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="5" type="GuiHandlerData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="8" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="3" type="GuiHandlerData"/>
+<property name="TaskBanner_CLOSE" value="4" type="GuiHandlerData"/>
+<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="1" type="GuiHandlerData"/>
+<property name="WaveformView_GOTO_CURSOR" value="1" type="GuiHandlerData"/>
+<property name="WaveformView_GOTO_LAST_TIME" value="1" type="GuiHandlerData"/>
+<property name="WaveformView_GOTO_TIME_0" value="2" type="GuiHandlerData"/>
+<property name="WaveformView_NEXT_TRANSITION" value="112" type="GuiHandlerData"/>
+<property name="WaveformView_PREVIOUS_TRANSITION" value="21" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="23" type="GuiMode"/>
+<property name="GuiMode" value="5" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="21" type="TclMode"/>
+<property name="TclMode" value="4" type="TclMode"/>
 </item>
 </section>
 </application>

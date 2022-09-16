@@ -2,7 +2,7 @@
 
 module register_file (input [4:0] r_addr_a, input [4:0] r_addr_b, input [4:0] w_addr,
     input [31:0] data_in, input wena, input clk, input reset_n,
-    output [31:0] out_a, output [31:0] out_b,
+    output reg [31:0] out_a, output reg [31:0] out_b,
     output reg [31:0] reg0,  output reg [31:0] reg1,  output reg [31:0] reg2,  output reg [31:0] reg3,
     output reg [31:0] reg4,  output reg [31:0] reg5,  output reg [31:0] reg6,  output reg [31:0] reg7,
     output reg [31:0] reg8,  output reg [31:0] reg9,  output reg [31:0] reg10, output reg [31:0] reg11,
@@ -14,14 +14,11 @@ module register_file (input [4:0] r_addr_a, input [4:0] r_addr_b, input [4:0] w_
 
     reg [31:0] register [31:0];
     
-    integer i;
     always @(*) begin
 
-        register[0] <= 32'd0; // register #0
-
-        if (~reset_n)
-            for (i = 0; i < 32; i = i+1)
-                register[i] <= 32'd0;
+        // Read
+        out_a <= register[r_addr_a];
+        out_b <= register[r_addr_b];
 
         reg0  <= register[0];  reg1  <= register[1];  reg2  <= register[2];  reg3  <= register[3];
         reg4  <= register[4];  reg5  <= register[5];  reg6  <= register[6];  reg7  <= register[7];
@@ -34,14 +31,19 @@ module register_file (input [4:0] r_addr_a, input [4:0] r_addr_b, input [4:0] w_
 
     end
 
-    // Read
-    assign out_a = register[r_addr_a];
-    assign out_b = register[r_addr_b];
-
     // Write
+    integer i;
     always @(posedge clk) begin
+
+        register[0] <= 32'd0; // register #0
+
+        if (~reset_n)
+            for (i = 0; i < 32; i = i+1)
+                register[i] <= 32'd0;
+                
         if (wena)
             register[w_addr] <= data_in;
+
     end
 
 endmodule
